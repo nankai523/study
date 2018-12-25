@@ -1,5 +1,4 @@
-# 前端学习记录
---------
+# 日常学习记录备忘
 ## nodejs安装
 使用nvm（node version  mananger）来安装nodejs，可以进行nodejs版本管理。具体参见：<https://github.com/coreybutler/nvm-windows>
 安装完nvm之后，以管理员身份启动命令行程序；执行：nvm install，安装当前最新版本nodejs。安装完后
@@ -10,3 +9,5 @@
 * 安装最近版本的nodejs: nvm install latest
 * 切换nodejs版本号： nvm use 【version】
 -------
+## create-react-app
+创建react-app 具体参见<https://github.com/facebook/create-react-app>
