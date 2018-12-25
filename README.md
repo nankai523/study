@@ -1,5 +1,4 @@
-# study
-前端学习记录
+# 前端学习记录
 --------
 ## nodejs安装
 使用nvm（node version  mananger）来安装nodejs，可以进行nodejs版本管理。具体参见：<https://github.com/coreybutler/nvm-windows>
@@ -9,6 +8,5 @@
 * 罗列所有安装的nodejs：nvm ls 
 * 查看当前nodejs版本：node -v
 * 安装最近版本的nodejs: nvm install latest
-* 切换nodejs版本号： nvm use <version>
-
+* 切换nodejs版本号： nvm use 【version】
 -------
