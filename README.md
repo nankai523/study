@@ -1,4 +1,12 @@
 # 日常学习记录备忘
+## Git 
+* win10已经集成了openssh，不用安装openssh
+* win7下，需要先安装OpenSSH
+<https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH>
+* 打开终端允许ssh-keygen产生证书
+* 在用户目录下.ssh文件夹下有证书
+* 安装Git for window <https://gitforwindows.org/>
+* 安装TortoiseGit客户端，集成到资源管理器，<https://tortoisegit.org/>,安装选择中间，请选择OpenSSH。
 ## nodejs安装
 使用nvm（node version  mananger）来安装nodejs，可以进行nodejs版本管理。具体参见：<https://github.com/coreybutler/nvm-windows>
 安装完nvm之后，以管理员身份启动命令行程序；执行：nvm install，安装当前最新版本nodejs。安装完后
@@ -12,6 +20,7 @@
 ## create-react-app
 ```
 npx create-react-app my-app
+npx create-react-app my-app --scripts-version=react-scripts-ts 版本更新可能较慢
 cd my-app
 npm start
 ```
@@ -67,5 +76,10 @@ npm start
     npm install --save react-router-dom
     ```
     参考文档：<https://reacttraining.com/react-router/web/example/basic>
+* 添加 proxy 配置在 package.json:
+    ```
+    "proxy": "http://localhost:4000",
+    ```
+
 ## react doc
 <https://reactjs.org/docs/getting-started.html>
