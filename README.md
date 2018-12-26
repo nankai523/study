@@ -15,7 +15,9 @@ npx create-react-app my-app
 cd my-app
 npm start
 ```
-创建react-app 具体参见<https://github.com/facebook/create-react-app>
+创建react-app 具体参见: 
+<https://github.com/facebook/create-react-app> 
+
 <https://facebook.github.io/create-react-app/docs/documentation-intro>
 ### 常见配置
 * 在程序的根目录下增加 .eslintrc 文件，以便进行Lint检查
