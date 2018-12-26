@@ -76,10 +76,23 @@ npm start
     npm install --save react-router-dom
     ```
     参考文档：<https://reacttraining.com/react-router/web/example/basic>
-* 添加 proxy 配置在 package.json:
+* 添加 proxy 配置，新增src\setupProxy.js，开发阶段使用basic认证:
     ```
-    "proxy": "http://localhost:4000",
+    const proxy = require('http-proxy-middleware');
+	module.exports = function(app) {
+	  app.use(proxy('/api', { 
+	    target: 'http://localhost:8080/myapp', 
+	    secure: false,
+	    changeOrigin: true,
+	    auth: 'name:password' 
+	  }));
+	};
     ```
-
+* 如果使用typscript，可能出现setupProxy.js编译报错，需要在tsconfig.json中增加配置
+	```
+	"exclude": [
+	    "src/setupProxy.js"
+	],
+	```
 ## react doc
 <https://reactjs.org/docs/getting-started.html>
