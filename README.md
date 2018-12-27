@@ -1,4 +1,4 @@
-# 日常学习记录备忘
+# 日常记录备忘
 ## Git 
 * win10已经集成了openssh，不用安装openssh
 * win7下，需要先安装OpenSSH
