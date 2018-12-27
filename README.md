@@ -21,6 +21,7 @@
 ```
 npx create-react-app my-app
 npx create-react-app my-app --scripts-version=react-scripts-ts 版本更新可能较慢
+npx create-react-app my-app --scripts-version=react-scripts-ts-antd
 cd my-app
 npm start
 ```
