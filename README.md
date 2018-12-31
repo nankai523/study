@@ -37,6 +37,10 @@ npm start
     ```
 * 在VSCODE中添加chrome插件，直接在vs中调试。运行F5，出现 launch.json 文件，配置如下：
     ```
+    webpack中的。
+    devtool: 'cheap-module-source-map',请选用这个，否则可能vscode会提示。未验证的断点
+    lauanch.json中内容如下：
+
     {
         "version": "0.2.0",
         "configurations": [
@@ -94,5 +98,54 @@ npm start
 	    "src/setupProxy.js"
 	],
 	```
+* npm命令
+    ```
+    1、npm init：这个命令用于创建一个package.json。
+    2、npm update -g <package>：更新全局软件包。
+    3、npm update -g：更新所有的全局软件包。
+    4、npm outdated -g --depth=0：找出需要更新的包。
+    ```
+* 增加webpack最新版 <https://webpack.js.org/guides/getting-started/>
+    ```
+    npm install --save-dev webpack-cli
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
+    ```
+* cookie 和localStorage，sessionStorage存储
+	```
+	在 Html5 中新加入的 localStorage 特性，主要是用来作为本地存储使用的，解决了 cookie 存储空间不足的问题。
+	cookie 中每条 cookie 的存储空间为 4K， localStorage 中一般浏览器支持的是 5M大小，在不同浏览器中 localStorage 会有所不同。
+	优点：拓展了 cookie 的 4k 限制， 可以将第一次请求的数据直接存储到本地，但只有在高版本的浏览器中才支持。
+	localStorage 与 sessionStorage 的唯一区别就是  localStorage 属于永久性存储，而sessionStorage 属于当会话结束的时候，sessionStorage 中的键值对就会被清空。
+	```
+* 保存滚动条位置 <https://reacttraining.com/react-router/web/guides/scroll-restoration>
+	```
+	First, ScrollRestoration would scroll the window up on navigation. 
+	Second, it would use location.key to save the window scroll position and the scroll positions of RestoredScroll components to sessionStorage. 
+	Then, when ScrollRestoration or RestoredScroll components mount, they could look up their position from sessionsStorage.
+	```
+* 利用classNames来动态控制css <https://github.com/JedWatson/classnames>
+    ```
+        classNames('foo', 'bar'); // => 'foo bar'
+        classNames('foo', { bar: true }); // => 'foo bar'
+        classNames({ 'foo-bar': true }); // => 'foo-bar'
+        classNames({ 'foo-bar': false }); // => ''
+        classNames({ foo: true }, { bar: true }); // => 'foo bar'
+        classNames({ foo: true, bar: true }); // => 'foo bar'
+
+        // lots of arguments of various types
+        classNames('foo', { bar: true, duck: false }, 'baz', { quux: true }); // => 'foo bar baz quux'
+
+        // other falsy values are just ignored
+        classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); // => 'bar 1'
+
+        let buttonType = 'primary';
+        classNames({ [`btn-${buttonType}`]: true });
+        var btnClass = classNames('btn', this.props.className, {
+        'btn-pressed': this.state.isPressed,
+        'btn-over': !this.state.isPressed && this.state.isHovered
+        });
+    ```
+* redux <https://redux-docs.netlify.com/introduction/examples>
 ## react doc
 <https://reactjs.org/docs/getting-started.html>
