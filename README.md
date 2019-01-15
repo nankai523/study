@@ -14,6 +14,7 @@
 ## 常用命令 
 * 罗列所有安装的nodejs：nvm ls 
 * 查看当前nodejs版本：node -v
+* 启用nodejs：nvm on 否则可能报nodejs没有找到错误。
 * 安装最近版本的nodejs: nvm install latest
 * 切换nodejs版本号： nvm use 【version】
 -------
