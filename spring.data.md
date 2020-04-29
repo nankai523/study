@@ -1,3 +1,21 @@
+#namedParameterJdbcTemplate
+```
+private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+}
+
+public int countOfActorsByFirstName(String firstName) {
+
+    String sql = "select count(*) from T_ACTOR where first_name = :first_name";
+
+    SqlParameterSource namedParameters = new MapSqlParameterSource("first_name", firstName);
+	//Map<String, String> namedParameters = Collections.singletonMap("first_name", firstName);
+	//SqlParameterSource namedParameters = new BeanPropertySqlParameterSource(exampleActor);
+    return this.namedParameterJdbcTemplate.queryForObject(sql, namedParameters, Integer.class);
+}
+```
 #批量更新
 ```
 public class JdbcActorDao implements ActorDao {
