@@ -18,7 +18,7 @@
 * 启用nodejs：nvm on 否则可能报nodejs没有找到错误。
 * 安装最近版本的nodejs: nvm install latest
 * 切换nodejs版本号： nvm use 【version】
--------
+
 ## create-react-app
 ```
 npx create-react-app my-app
@@ -116,16 +116,23 @@ npm start
     ```
 * cookie 和localStorage，sessionStorage存储
 	```
-	在 Html5 中新加入的 localStorage 特性，主要是用来作为本地存储使用的，解决了 cookie 存储空间不足的问题。
-	cookie 中每条 cookie 的存储空间为 4K， localStorage 中一般浏览器支持的是 5M大小，在不同浏览器中 localStorage 会有所不同。
-	优点：拓展了 cookie 的 4k 限制， 可以将第一次请求的数据直接存储到本地，但只有在高版本的浏览器中才支持。
-	localStorage 与 sessionStorage 的唯一区别就是  localStorage 属于永久性存储，而sessionStorage 属于当会话结束的时候，sessionStorage 中的键值对就会被清空。
+	在 Html5 中新加入的 localStorage 特性，主要是用来作为本地存储使用的，
+	解决了 cookie 存储空间不足的问题。
+	cookie 中每条 cookie 的存储空间为 4K， localStorage 中一般浏览器支持的是 5M大小，
+	在不同浏览器中 localStorage 会有所不同。
+	优点：拓展了 cookie 的 4k 限制， 可以将第一次请求的数据直接存储到本地，
+	但只有在高版本的浏览器中才支持。
+	localStorage 与 sessionStorage 的唯一区别就是  localStorage 属于永久性存储，
+	而sessionStorage 属于当会话结束的时候，sessionStorage 中的键值对就会被清空。
 	```
 * 保存滚动条位置 <https://reacttraining.com/react-router/web/guides/scroll-restoration>
 	```
 	First, ScrollRestoration would scroll the window up on navigation. 
-	Second, it would use location.key to save the window scroll position and the scroll positions of RestoredScroll components to sessionStorage. 
-	Then, when ScrollRestoration or RestoredScroll components mount, they could look up their position from sessionsStorage.
+	Second, it would use location.key to save the window 
+	scroll position and the scroll positions of RestoredScroll components
+	to sessionStorage. 
+	Then, when ScrollRestoration or RestoredScroll components mount, 
+	they could look up their position from sessionsStorage.
 	```
 * 利用classNames来动态控制css <https://github.com/JedWatson/classnames>
     ```

@@ -1,4 +1,4 @@
-#namedParameterJdbcTemplate
+## namedParameterJdbcTemplate
 ```
 private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
@@ -16,7 +16,7 @@ public int countOfActorsByFirstName(String firstName) {
     return this.namedParameterJdbcTemplate.queryForObject(sql, namedParameters, Integer.class);
 }
 ```
-#批量更新
+## 批量更新
 ```
 public class JdbcActorDao implements ActorDao {
 
@@ -36,7 +36,7 @@ public class JdbcActorDao implements ActorDao {
 }
 ```
 
-#使用SimpleJdbcInsert进行插入操作
+## 使用SimpleJdbcInsert进行插入操作
 ```
 public class JdbcActorDao implements ActorDao {
 
