@@ -165,3 +165,30 @@ npm start
     > https://github.com/webpack-contrib/webpack-bundle-analyzer
 ## react doc
 <https://reactjs.org/docs/getting-started.html>
+
+## 安装yarn
+* yarn
+	```
+	npm install -g yarn
+	yarn -v
+	
+	
+	# 初始化一个项目
+	yarn init
+	# 装包
+	yarn add packagename
+	yarn add packagename --dev
+	# 更新包
+	yarn upgrade packagename
+	# 删除包
+	yarn remove packagename
+	# 安装所有包
+	yarn
+	yarn install
+	# 发布包
+	yarn publish
+	# 查看包的缓存列表
+	yarn cache list
+	# 全局安装包 == npm -g
+	yarn global
+	```
